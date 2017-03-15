@@ -15,7 +15,7 @@ constructor(private fbSrv:Facebook){
 
 
 ngOnInit(){
-    Facebook.appInvite(new URL('test',''));
+    //Facebook.appInvite(new URL('test',''));
 }
 
 
