@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Test Fiche Contact</ion-title>
+  </ion-navbar>
+</ion-header>
+
+  <ion-content>
+ <ion-list>
+        
+        <ion-label>Nom</ion-label>    
+        <ion-item>
+           {{cont.displayName}}
+       </ion-item> 
+
+       <ion-label>Num téléphone</ion-label>    
+        <ion-item *ngFor="let tel of cont.phoneNumbers">
+           {{tel.value}}
+       </ion-item>
+
+</ion-list>
+</ion-content>

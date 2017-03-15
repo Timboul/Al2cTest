@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>EVENACT</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <h2>Test AL2C</h2>
+
+  <img src="assets/img/logo.png">
+ 
+ <form [formGroup]="formAuth">
+ <ion-list inset>
+
+  <ion-item>
+    <ion-label>Email</ion-label>
+    <ion-input type="email"  formControlName="emailUser" ></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Mot de passe</ion-label>
+    <ion-input type="password" formControlName="psdUser"></ion-input>
+  </ion-item>
+<button  ion-button full type="submit" (click)="clickAction()">Valider</button> 
+</ion-list>
+
+<!--<button [hidden]="!formAuth.controls.emailUser.valid === true && !formAuth.controls.psdUser.valid === true" ion-button full type="submit" (click)="clickAction()">Valider</button> -->
+</form>
+</ion-content>
